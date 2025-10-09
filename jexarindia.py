@@ -183,7 +183,7 @@ def fix_word(num):
     return fixed
     
 def check_banned_status(player_id):
-    url = f"https://freefireapis.squareweb.app/api/check_ban?id={player_id}"
+    url = f"https://freefireapis.shardweb.app/api/check_ban?id={player_id}"
     try:
         response = requests.get(url, timeout=15)
         if response.status_code == 200:
@@ -249,7 +249,7 @@ def rrrrrrrrrrrrrr(number):
 
 def newinfo(uid, region="br"):
     try:
-        url = f"https://freefireapis.squareweb.app/api/info_player?uid={uid}&region={region}&clothes=true"
+        url = f"https://freefireapis.shardweb.app/api/info_player?uid={uid}&region={region}&clothes=true"
         response = requests.get(url)
 
         if response.status_code == 200:
